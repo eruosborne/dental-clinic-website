@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "services": "Dịch Vụ",
+    "pricing": "Bảng Giá",
+    "about": "Giới Thiệu",
+    "contact": "Liên Hệ",
+    "book": "Đặt Lịch Hẹn",
+    "language": "English"
+  },
+  "hero": {
+    "eyebrow": "Đà Nẵng, Việt Nam · Tin tưởng bởi bệnh nhân từ NZ & Australia",
+    "headline": "Nụ cười hoàn hảo.",
+    "headline2": "Giá tốt nhất.",
+    "subheadline": "Nha Khoa Metal kết hợp các bác sĩ được đào tạo quốc tế, công nghệ hiện đại và hỗ trợ AI — để bạn được chăm sóc răng miệng tốt nhất với chi phí hợp lý.",
+    "cta_primary": "Đặt Lịch Tư Vấn Miễn Phí",
+    "cta_secondary": "Chat Với AI Của Chúng Tôi",
+    "cta_note": "Không cam kết. Không đặt vé. Chỉ là câu trả lời."
+  },
+  "trust": {
+    "patients": "bệnh nhân đã điều trị",
+    "patients_sub": "Từ NZ, Úc và 18 quốc gia",
+    "years": "năm hoạt động",
+    "years_sub": "Thành lập tại Đà Nẵng",
+    "rating": "đánh giá Google",
+    "rating_sub": "đánh giá được xác minh",
+    "savings": "tiết kiệm so với NZ/Úc",
+    "savings_sub": "Cho các điều trị tương đương"
+  },
+  "services": {
+    "label": "Dịch Vụ Của Chúng Tôi",
+    "heading": "Mọi điều trị bạn cần — với giá hợp lý",
+    "implants": {
+      "name": "Trồng Răng Implant",
+      "desc": "Phục hồi răng vĩnh viễn, tự nhiên. Cùng thương hiệu hàng đầu với các phòng khám tại Auckland.",
+      "price": "Tiết kiệm đến 75% so với NZ"
+    },
+    "cosmetic": {
+      "name": "Nha Khoa Thẩm Mỹ",
+      "desc": "Răng sứ veneer, mão răng và tẩy trắng. Lập kế hoạch nụ cười kỹ thuật số.",
+      "price": "Tiết kiệm đến 80% so với NZ"
+    },
+    "general": {
+      "name": "Nha Khoa Tổng Quát",
+      "desc": "Chăm sóc định kỳ, trám răng, nhổ răng, điều trị tủy. Chuyên nghiệp và thoải mái.",
+      "price": "Tiết kiệm đến 70% so với NZ"
+    },
+    "aligners": {
+      "name": "Niềng Răng Trong Suốt",
+      "desc": "Răng thẳng hơn với phương pháp niềng trong suốt kín đáo. Bắt đầu tại Đà Nẵng, theo dõi từ nhà.",
+      "price": "Tiết kiệm đến 70% so với NZ"
+    },
+    "see_more": "Xem điều trị",
+    "overview_cta": "Xem tất cả dịch vụ"
+  },
+  "why": {
+    "label": "Tại Sao Đà Nẵng?",
+    "heading": "Chất lượng như nhau. Giá hoàn toàn khác.",
+    "col1_heading": "So Sánh Chi Phí",
+    "col1_body": "Đây là chi phí điều trị tương tự tại New Zealand so với tại Nha Khoa Metal ở Đà Nẵng.",
+    "col1_cta": "Tính toán tiết kiệm của bạn",
+    "col2_heading": "Chất lượng có thể kiểm chứng",
+    "col2_point1": "Cùng thương hiệu implant với nha sĩ Auckland của bạn (Straumann, Nobel Biocare)",
+    "col2_point2": "Lập kế hoạch điều trị 3D kỹ thuật số",
+    "col2_point3": "Đội ngũ nói tiếng Anh và điều phối viên bệnh nhân quốc tế",
+    "col2_point4": "Hồ sơ điều trị bằng văn bản gửi cho nha sĩ tại nhà của bạn",
+    "col2_point5": "Bảo hành cho tất cả công việc phục hồi và thẩm mỹ",
+    "col2_note": "Chi phí vận hành thấp hơn tại Việt Nam là lý do giá rẻ hơn — không phải chất lượng thấp hơn."
+  },
+  "ai": {
+    "label": "Hỗ Trợ AI",
+    "heading": "Công cụ giúp du lịch nha khoa dễ dàng hơn",
+    "chat_title": "AI Tư Vấn 24/7",
+    "chat_desc": "Hỏi bất cứ điều gì, bất kỳ lúc nào — điều trị, giá cả, những gì cần mong đợi. AI của chúng tôi phản hồi trong vài giây.",
+    "chat_cta": "Chat ngay",
+    "preview_title": "Xem Kết Quả Trước",
+    "preview_desc": "Tải ảnh nụ cười của bạn và AI của chúng tôi hiển thị bản xem trước mô phỏng kết quả tiềm năng.",
+    "preview_cta": "Thử Smile Preview",
+    "symptom_title": "Không Biết Bạn Cần Gì?",
+    "symptom_desc": "Trả lời 5 câu hỏi nhanh và chúng tôi sẽ gợi ý con đường điều trị phù hợp nhất.",
+    "symptom_cta": "Kiểm tra triệu chứng"
+  },
+  "testimonials": {
+    "label": "Câu Chuyện Bệnh Nhân",
+    "heading": "Bệnh nhân thật. Kết quả thật. Tiết kiệm thật.",
+    "subheading": "Đây là các đánh giá mẫu — đánh giá thật từ bệnh nhân NZ và Úc sẽ được hiển thị tại đây.",
+    "verified": "Đánh Giá Google Đã Xác Minh",
+    "treatment": "Điều trị",
+    "saved": "Tiết kiệm",
+    "all_stories": "Đọc tất cả câu chuyện",
+    "google_reviews": "Xem trên Google Reviews"
+  },
+  "cta": {
+    "heading": "Sẵn sàng thực hiện chưa?",
+    "subheading": "Nhận tư vấn miễn phí. Hỏi AI của chúng tôi trước hoặc nói chuyện trực tiếp với điều phối viên.",
+    "primary": "Đặt Lịch Tư Vấn Miễn Phí",
+    "secondary": "Chat Với AI — Miễn Phí & Ngay Lập Tức",
+    "note": "Phản hồi trong 24 giờ · Nói tiếng Anh · Không áp lực"
+  },
+  "footer": {
+    "tagline": "Chăm sóc nha khoa đẳng cấp thế giới tại Đà Nẵng, Việt Nam.",
+    "quick_links": "Liên Kết Nhanh",
+    "contact_us": "Liên Hệ",
+    "follow_us": "Theo Dõi",
+    "hours": "Thứ 2 – Chủ Nhật: 8:00 SA – 5:00 CH (Giờ Việt Nam, GMT+7)",
+    "copyright": "Bảo lưu mọi quyền.",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ"
+  },
+  "booking": {
+    "title": "Đặt Lịch Tư Vấn Miễn Phí",
+    "subtitle": "Không cam kết. Không đặt vé máy bay. Chỉ là cuộc trò chuyện về mục tiêu nha khoa của bạn.",
+    "name": "Họ và Tên",
+    "email": "Địa Chỉ Email",
+    "phone": "Số Điện Thoại",
+    "treatment": "Dịch Vụ Quan Tâm",
+    "treatment_placeholder": "Chọn dịch vụ",
+    "dates": "Ngày Dự Kiến Đến (ước tính)",
+    "notes": "Ghi Chú Thêm",
+    "notes_placeholder": "Cho chúng tôi biết về mục tiêu nha khoa của bạn...",
+    "submit": "Gửi Yêu Cầu",
+    "submitting": "Đang gửi...",
+    "success_title": "Đã nhận yêu cầu!",
+    "success_body": "Điều phối viên bệnh nhân quốc tế của chúng tôi sẽ liên hệ trong vòng 24 giờ.",
+    "what_next": "Bước tiếp theo",
+    "step1": "Chúng tôi xem xét yêu cầu và chuẩn bị kế hoạch điều trị cá nhân hóa",
+    "step2": "Điều phối viên email cho bạn về chi phí, thời gian và câu trả lời",
+    "step3": "Tùy chọn: tư vấn video trước khi đặt vé",
+    "step4": "Đến Đà Nẵng. Chúng tôi lo phần còn lại."
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Câu hỏi? Đội ngũ nói tiếng Anh và AI của chúng tôi luôn sẵn sàng trợ giúp.",
+    "form_heading": "Gửi Tin Nhắn",
+    "name": "Họ và Tên",
+    "email": "Địa Chỉ Email",
+    "phone": "Điện Thoại (tùy chọn)",
+    "language": "Ngôn Ngữ Ưa Thích",
+    "message": "Tin Nhắn",
+    "submit": "Gửi Tin Nhắn",
+    "or_chat": "Hoặc chat với AI ngay →",
+    "address_heading": "Địa Chỉ",
+    "hours_heading": "Giờ Làm Việc",
+    "hours": "Thứ 2 – Chủ Nhật, 8:00 SA – 5:00 CH Giờ Việt Nam",
+    "time_heading": "Giờ Hiện Tại",
+    "emergency": "Cấp cứu nha khoa? Gọi trực tiếp:"
+  },
+  "about": {
+    "title": "Về Nha Khoa Metal",
+    "subtitle": "Xây dựng cho bệnh nhân quốc tế. Tin tưởng hơn 8 năm.",
+    "story_heading": "Câu Chuyện Của Chúng Tôi",
+    "story": "Nha Khoa Metal được thành lập với một sứ mệnh duy nhất: làm cho dịch vụ nha khoa đẳng cấp thế giới trở nên dễ tiếp cận với bệnh nhân từ New Zealand, Úc và xa hơn.",
+    "mission_heading": "Sứ Mệnh Của Chúng Tôi",
+    "mission": "Mọi bệnh nhân đều xứng đáng được chăm sóc nha khoa đáp ứng tiêu chuẩn quốc tế. Chi phí không bao giờ là lý do để ai đó sống với đau răng.",
+    "team_heading": "Gặp Gỡ Các Chuyên Gia",
+    "credentials_heading": "Chứng Chỉ & Tiêu Chuẩn",
+    "why_trust_heading": "Tại sao bệnh nhân quốc tế tin tưởng chúng tôi",
+    "stats_heading": "Các Con Số"
+  },
+  "services_page": {
+    "title": "Dịch Vụ Nha Khoa",
+    "subtitle": "Chăm sóc nha khoa toàn diện cho bệnh nhân quốc tế.",
+    "all_services": "Tất Cả Dịch Vụ",
+    "faq_heading": "Câu Hỏi Thường Gặp",
+    "timeline_heading": "Quy Trình",
+    "price_teaser": "Bạn có thể tiết kiệm bao nhiêu?",
+    "price_cta": "Xem máy tính tiết kiệm đầy đủ"
+  }
+}

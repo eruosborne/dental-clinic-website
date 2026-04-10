@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book Free Consultation",
+    "language": "Tiếng Việt"
+  },
+  "hero": {
+    "eyebrow": "Da Nang, Vietnam · Trusted by patients from NZ & Australia",
+    "headline": "Your best smile.",
+    "headline2": "A fraction of the price.",
+    "subheadline": "Metal Dental combines internationally trained specialists, hospital-grade technology, and AI-powered support — so you get the dental work you've been putting off, without the Auckland or Sydney price tag.",
+    "cta_primary": "Book Free Consultation",
+    "cta_secondary": "Talk to Our AI Assistant",
+    "cta_note": "No commitment. No flights booked. Just answers."
+  },
+  "trust": {
+    "patients": "patients treated",
+    "patients_sub": "From NZ, Australia & 18 countries",
+    "years": "years in practice",
+    "years_sub": "Established in Da Nang",
+    "rating": "Google rating",
+    "rating_sub": "verified reviews",
+    "savings": "savings vs NZ/Aus",
+    "savings_sub": "On comparable treatments"
+  },
+  "services": {
+    "label": "What We Treat",
+    "heading": "Every treatment you need — at a price that makes sense",
+    "implants": {
+      "name": "Dental Implants",
+      "desc": "Permanent, natural-looking tooth replacement. Same leading brands as Auckland clinics — at a fraction of the cost.",
+      "price": "Save up to 75% vs NZ"
+    },
+    "cosmetic": {
+      "name": "Cosmetic Dentistry",
+      "desc": "Porcelain veneers, crowns, and whitening. Digital smile planning so you see your result before we start.",
+      "price": "Save up to 80% vs NZ"
+    },
+    "general": {
+      "name": "General Dentistry",
+      "desc": "Routine care, fillings, extractions, root canals. Clinically thorough, with English records sent home.",
+      "price": "Save up to 70% vs NZ"
+    },
+    "aligners": {
+      "name": "Clear Aligners",
+      "desc": "Straighter teeth with discreet aligner treatment. Start in Da Nang, monitor progress from home.",
+      "price": "Save up to 70% vs NZ"
+    },
+    "see_more": "See treatments",
+    "overview_cta": "View all services"
+  },
+  "why": {
+    "label": "Why Da Nang?",
+    "heading": "The same quality. A completely different price.",
+    "col1_heading": "A Cost Reality Check",
+    "col1_body": "Here's what the same treatment costs in New Zealand vs. at Metal Dental in Da Nang. Even after flights and accommodation, most patients save thousands.",
+    "col1_cta": "Calculate your savings",
+    "col2_heading": "Quality you can verify",
+    "col2_point1": "Same implant brands as your Auckland dentist (Straumann, Nobel Biocare)",
+    "col2_point2": "3D digital treatment planning — your result mapped before we begin",
+    "col2_point3": "English-speaking team and dedicated international patient coordinator",
+    "col2_point4": "Written treatment records sent to your home dentist",
+    "col2_point5": "Warranty on all restorative and cosmetic work",
+    "col2_note": "Vietnam's lower operating costs are why it's cheaper — not lower quality."
+  },
+  "ai": {
+    "label": "Powered by AI",
+    "heading": "The tools that make dental tourism feel easy",
+    "chat_title": "24/7 AI Dental Concierge",
+    "chat_desc": "Ask anything, any time — treatments, pricing, what to expect. Our AI responds in seconds, not business hours. It's midnight in Auckland. Your questions don't wait.",
+    "chat_cta": "Chat now",
+    "preview_title": "See Your Result First",
+    "preview_desc": "Upload a photo of your smile and our AI shows a simulated preview of potential results — veneers, whitening, or orthodontics. Not a promise, but a powerful starting point.",
+    "preview_cta": "Try Smile Preview",
+    "symptom_title": "Not Sure What You Need?",
+    "symptom_desc": "Answer 5 quick questions and we'll suggest the most likely treatment path — and whether it's urgent or can wait for your next planned trip.",
+    "symptom_cta": "Check your symptoms"
+  },
+  "testimonials": {
+    "label": "Patient Stories",
+    "heading": "Real patients. Real results. Real savings.",
+    "subheading": "These are demo placeholder testimonials — real reviews from NZ and Australian patients will be featured here.",
+    "verified": "Verified Google Review",
+    "treatment": "Treatment",
+    "saved": "Saved",
+    "all_stories": "Read all patient stories",
+    "google_reviews": "View on Google Reviews"
+  },
+  "cta": {
+    "heading": "Ready to stop putting it off?",
+    "subheading": "Get a free consultation. Ask our AI first, or speak directly to our international patient coordinator. Your first step costs nothing.",
+    "primary": "Book Free Consultation",
+    "secondary": "Chat with AI — Free & Instant",
+    "note": "Responds within 24 hours · English-speaking · No pressure"
+  },
+  "footer": {
+    "tagline": "World-class dental care in Da Nang, Vietnam. Trusted by patients from New Zealand, Australia, and 18+ countries.",
+    "quick_links": "Quick Links",
+    "contact_us": "Contact Us",
+    "follow_us": "Follow Us",
+    "hours": "Mon – Sun: 8:00 AM – 5:00 PM (Vietnam Time, GMT+7)",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "booking": {
+    "title": "Book Your Free Consultation",
+    "subtitle": "No commitment. No flights booked. Just a conversation about your dental goals and how we can help.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "treatment": "Treatment Interest",
+    "treatment_placeholder": "Select a treatment",
+    "dates": "Preferred Travel Dates (approximate)",
+    "notes": "Additional Notes",
+    "notes_placeholder": "Tell us about your dental goals, any concerns, or questions you have...",
+    "submit": "Send My Request",
+    "submitting": "Sending...",
+    "success_title": "Request received!",
+    "success_body": "Our international patient coordinator will be in touch within 24 hours. You can also chat with our AI assistant any time.",
+    "what_next": "What happens next",
+    "step1": "We review your request and prepare a personalised treatment plan",
+    "step2": "Our coordinator emails you with costs, timeline, and answers to your questions",
+    "step3": "Optional: video consultation before you book flights",
+    "step4": "Arrive in Da Nang. We take care of everything from there."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Questions? Our English-speaking team and AI assistant are here to help — whatever timezone you're in.",
+    "form_heading": "Send a Message",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone (optional)",
+    "language": "Preferred Language",
+    "message": "Message",
+    "submit": "Send Message",
+    "or_chat": "Or chat with our AI instantly →",
+    "address_heading": "Find Us",
+    "hours_heading": "Opening Hours",
+    "hours": "Monday – Sunday, 8:00 AM – 5:00 PM Vietnam Time",
+    "time_heading": "Current Time",
+    "emergency": "Dental emergency? Call us directly:"
+  },
+  "about": {
+    "title": "About Metal Dental",
+    "subtitle": "Built for international patients. Trusted for over 8 years.",
+    "story_heading": "Our Story",
+    "story": "Metal Dental was founded with a single mission: to make world-class dental care accessible to patients from New Zealand, Australia, and beyond — without the world-class price tag. Located in Da Nang, Vietnam's most liveable coastal city, we've built our reputation on clinical excellence, genuine English communication, and AI-powered tools that eliminate the uncertainty of dental tourism.",
+    "mission_heading": "Our Mission",
+    "mission": "Every patient who walks through our doors deserves dental care that meets international standards. We believe cost should never be the reason someone lives with dental pain or a smile they're not proud of.",
+    "team_heading": "Meet Our Specialists",
+    "credentials_heading": "Certifications & Standards",
+    "why_trust_heading": "Why international patients trust us",
+    "stats_heading": "By the numbers"
+  },
+  "services_page": {
+    "title": "Our Dental Services",
+    "subtitle": "Comprehensive dental care for international patients. Every treatment designed around your schedule, your goals, and your budget.",
+    "all_services": "All Services",
+    "faq_heading": "Frequently Asked Questions",
+    "timeline_heading": "What to Expect",
+    "price_teaser": "How much could you save?",
+    "price_cta": "See full savings calculator"
+  }
+}
