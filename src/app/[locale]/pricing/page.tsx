@@ -3,9 +3,9 @@ import Link from "next/link";
 import SavingsCalculator from "@/components/pricing/SavingsCalculator";
 
 export const metadata: Metadata = {
-  title: "Dental Prices Vietnam — NZD & AUD Savings Calculator",
+  title: "Dental Prices — NZD & AUD Savings Calculator",
   description:
-    "Compare dental costs in New Zealand/Australia vs Metal Dental Da Nang. Interactive savings calculator — select your treatments and see exactly how much you'd save, including flights.",
+    "Compare dental costs in New Zealand/Australia vs Smile Dental Clinic. Interactive savings calculator — select your treatments and see exactly how much you'd save, including flights.",
 };
 
 const included = [
@@ -34,7 +34,7 @@ export default function PricingPage() {
             <span className="text-gradient-accent">you'd save</span>
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Select the treatments you need and see the real cost comparison — NZD or AUD vs. Metal Dental pricing. We even factor in flights and accommodation.
+            Select the treatments you need and see the real cost comparison — NZD or AUD vs. Smile Dental Clinic pricing. We even factor in flights and accommodation.
           </p>
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function PricingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl font-display font-bold text-off-white mb-2">What's included in every treatment</h2>
-              <p className="text-gray-700 text-sm">No hidden costs. No surprises. Here's what every Metal Dental patient gets as standard.</p>
+              <p className="text-gray-700 text-sm">No hidden costs. No surprises. Here's what every Smile Dental Clinic patient gets as standard.</p>
             </div>
             <ul className="space-y-3">
               {included.map((item) => (

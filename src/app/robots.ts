@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://nhakhoametal.com/sitemap.xml",
+    sitemap: "https://smiledental.clinic/sitemap.xml",
   };
 }

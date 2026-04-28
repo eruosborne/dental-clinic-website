@@ -1,54 +1,41 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
+import { useLocalHref } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const item = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } };
 const container = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
 
 export default function ScrollVideoHero() {
   const t = useTranslations("hero");
-  const locale = useLocale();
-  const localHref = (p: string) => locale === "vi" ? `/vi${p}` : p;
+  const localHref = useLocalHref();
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [backgroundColor, setBackgroundColor] = useState("rgb(255, 255, 255)");
-
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
     const handleScroll = () => {
-      if (!containerRef.current) return;
+      if (!containerRef.current || !video.duration) return;
 
-      // Get the video container's position
       const rect = containerRef.current.getBoundingClientRect();
       const containerHeight = containerRef.current.offsetHeight;
-
-      // Calculate scroll progress (0 to 1)
-      // When the container is at the top of the viewport, progress = 0
-      // When the container is at the bottom of the viewport, progress = 1
       const scrollProgress = Math.max(0, Math.min(1, 1 - (rect.bottom / (window.innerHeight + containerHeight))));
 
-      // Set video currentTime based on scroll progress
-      if (video.duration) {
-        video.currentTime = scrollProgress * video.duration;
-      }
-
-      // Turn white instantly when scrolling
-      setBackgroundColor("rgb(255, 255, 255)");
+      video.currentTime = scrollProgress * video.duration;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden"
-      style={{ backgroundColor }}
+      className="relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden bg-white"
     >
       {/* Content - Left side */}
       <div className="relative z-20 w-full md:w-1/2 px-4 sm:px-6 lg:px-8 pt-24 pb-8 md:pt-32 md:pb-24">
@@ -95,13 +82,17 @@ export default function ScrollVideoHero() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </Link>
-          <button
-            onClick={() => document.getElementById("chat-widget-trigger")?.click()}
-            className="inline-flex items-center justify-center gap-2 border border-gray-300 text-black font-medium text-base px-8 py-4 rounded-xl hover:border-accent/60 hover:bg-accent/5 transition-all duration-300"
+          <Link
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5E] text-white font-semibold text-base px-8 py-4 rounded-xl shadow-[0_0_30px_rgba(37,211,102,0.35)] hover:shadow-[0_0_50px_rgba(37,211,102,0.5)] transition-all duration-300"
           >
-            <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            {t("cta_secondary")}
-          </button>
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.946 1.347l-.383.214-.39-.013c-1.585 0-2.98.735-3.99 2.064C3.75 10.645 3 12.577 3 14.8c0 1.148.248 2.457.733 3.52L3 21.957l3.518-.737a9.8 9.8 0 003.6.633h.006c5.451 0 9.876-4.422 9.876-9.876 0-2.646-.981-5.127-2.764-7.008-1.784-1.882-4.165-2.917-6.769-2.917" />
+            </svg>
+            Chat on WhatsApp
+          </Link>
         </motion.div>
 
         {/* Note */}
@@ -162,7 +153,7 @@ export default function ScrollVideoHero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float z-30">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float z-30" aria-hidden="true">
         <span className="text-gray-400 text-xs tracking-widest uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-gray-300 to-transparent" />
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
+import { useLocalHref } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -39,10 +40,9 @@ const cards = [
 
 export default function ServicesOverview() {
   const t = useTranslations("services");
-  const locale = useLocale();
+  const localHref = useLocalHref();
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const localHref = (p: string) => locale === "vi" ? `/vi${p}` : p;
 
   return (
     <section className="section">

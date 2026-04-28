@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/lib/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import "../globals.css";
 
 type Props = {
@@ -21,14 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "hero" });
   return {
     title: {
-      default: "Metal Dental — World-Class Dental Care for NZ & Aus Patients",
-      template: "%s | Metal Dental Da Nang",
+      default: "Smile Dental Clinic — World-Class Dental Care for NZ & Aus Patients",
+      template: "%s | Smile Dental Clinic",
     },
     description:
-      "Save up to 70% on dental implants, veneers, and cosmetic dentistry in Da Nang, Vietnam. English-speaking team, AI-powered consultation, trusted by patients from New Zealand and Australia.",
-    metadataBase: new URL("https://nhakhoametal.com"),
+      "Save up to 70% on dental implants, veneers, and cosmetic dentistry. English-speaking team, AI-powered consultation, trusted by patients from New Zealand and Australia.",
+    metadataBase: new URL("https://smiledental.clinic"),
     openGraph: {
-      siteName: "Metal Dental",
+      siteName: "Smile Dental Clinic",
       locale: locale === "vi" ? "vi_VN" : "en_AU",
       type: "website",
     },
@@ -44,10 +45,14 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium">
+            Skip to main content
+          </a>
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main id="main-content" className="flex-1">{children}</main>
             <Footer />
+            <WhatsAppButton />
           </div>
         </NextIntlClientProvider>
       </body>

@@ -10,10 +10,10 @@
     "language": "English"
   },
   "hero": {
-    "eyebrow": "Đà Nẵng, Việt Nam · Tin tưởng bởi bệnh nhân từ NZ & Australia",
+    "eyebrow": "Đông Nam Á · Tin tưởng bởi bệnh nhân từ NZ & Australia",
     "headline": "Nụ cười hoàn hảo.",
     "headline2": "Giá tốt nhất.",
-    "subheadline": "Nha Khoa Metal kết hợp các bác sĩ được đào tạo quốc tế, công nghệ hiện đại và hỗ trợ AI — để bạn được chăm sóc răng miệng tốt nhất với chi phí hợp lý.",
+    "subheadline": "Smile Dental Clinic kết hợp các bác sĩ được đào tạo quốc tế, công nghệ hiện đại và hỗ trợ AI — để bạn được chăm sóc răng miệng tốt nhất với chi phí hợp lý.",
     "cta_primary": "Đặt Lịch Tư Vấn Miễn Phí",
     "cta_secondary": "Chat Với AI Của Chúng Tôi",
     "cta_note": "Không cam kết. Không đặt vé. Chỉ là câu trả lời."
@@ -22,7 +22,7 @@
     "patients": "bệnh nhân đã điều trị",
     "patients_sub": "Từ NZ, Úc và 18 quốc gia",
     "years": "năm hoạt động",
-    "years_sub": "Thành lập tại Đà Nẵng",
+    "years_sub": "Thành lập tại Đông Nam Á",
     "rating": "đánh giá Google",
     "rating_sub": "đánh giá được xác minh",
     "savings": "tiết kiệm so với NZ/Úc",
@@ -48,17 +48,17 @@
     },
     "aligners": {
       "name": "Niềng Răng Trong Suốt",
-      "desc": "Răng thẳng hơn với phương pháp niềng trong suốt kín đáo. Bắt đầu tại Đà Nẵng, theo dõi từ nhà.",
+      "desc": "Răng thẳng hơn với phương pháp niềng trong suốt kín đáo. Bắt đầu điều trị, theo dõi từ nhà.",
       "price": "Tiết kiệm đến 70% so với NZ"
     },
     "see_more": "Xem điều trị",
     "overview_cta": "Xem tất cả dịch vụ"
   },
   "why": {
-    "label": "Tại Sao Đà Nẵng?",
+    "label": "Tại Sao Chọn Chúng Tôi?",
     "heading": "Chất lượng như nhau. Giá hoàn toàn khác.",
     "col1_heading": "So Sánh Chi Phí",
-    "col1_body": "Đây là chi phí điều trị tương tự tại New Zealand so với tại Nha Khoa Metal ở Đà Nẵng.",
+    "col1_body": "Đây là chi phí điều trị tương tự tại New Zealand so với tại Smile Dental Clinic.",
     "col1_cta": "Tính toán tiết kiệm của bạn",
     "col2_heading": "Chất lượng có thể kiểm chứng",
     "col2_point1": "Cùng thương hiệu implant với nha sĩ Auckland của bạn (Straumann, Nobel Biocare)",
@@ -96,14 +96,18 @@
     "subheading": "Nhận tư vấn miễn phí. Hỏi AI của chúng tôi trước hoặc nói chuyện trực tiếp với điều phối viên.",
     "primary": "Đặt Lịch Tư Vấn Miễn Phí",
     "secondary": "Chat Với AI — Miễn Phí & Ngay Lập Tức",
-    "note": "Phản hồi trong 24 giờ · Nói tiếng Anh · Không áp lực"
+    "note": "Phản hồi trong 24 giờ · Nói tiếng Anh · Không áp lực",
+    "whatsapp": "WhatsApp",
+    "ai_chat": "Chat AI",
+    "book": "Đặt Lịch Trực Tuyến",
+    "email": "Email"
   },
   "footer": {
-    "tagline": "Chăm sóc nha khoa đẳng cấp thế giới tại Đà Nẵng, Việt Nam.",
+    "tagline": "Chăm sóc nha khoa đẳng cấp thế giới tại Đông Nam Á.",
     "quick_links": "Liên Kết Nhanh",
     "contact_us": "Liên Hệ",
     "follow_us": "Theo Dõi",
-    "hours": "Thứ 2 – Chủ Nhật: 8:00 SA – 5:00 CH (Giờ Việt Nam, GMT+7)",
+    "hours": "Thứ 2 – Chủ Nhật: 8:00 SA – 5:00 CH (Giờ Địa Phương)",
     "copyright": "Bảo lưu mọi quyền.",
     "privacy": "Chính Sách Bảo Mật",
     "terms": "Điều Khoản Dịch Vụ"
@@ -127,7 +131,7 @@
     "step1": "Chúng tôi xem xét yêu cầu và chuẩn bị kế hoạch điều trị cá nhân hóa",
     "step2": "Điều phối viên email cho bạn về chi phí, thời gian và câu trả lời",
     "step3": "Tùy chọn: tư vấn video trước khi đặt vé",
-    "step4": "Đến Đà Nẵng. Chúng tôi lo phần còn lại."
+    "step4": "Đến phòng khám. Chúng tôi lo phần còn lại."
   },
   "contact": {
     "title": "Liên Hệ",
@@ -142,15 +146,15 @@
     "or_chat": "Hoặc chat với AI ngay →",
     "address_heading": "Địa Chỉ",
     "hours_heading": "Giờ Làm Việc",
-    "hours": "Thứ 2 – Chủ Nhật, 8:00 SA – 5:00 CH Giờ Việt Nam",
+    "hours": "Thứ 2 – Chủ Nhật, 8:00 SA – 5:00 CH Giờ Địa Phương",
     "time_heading": "Giờ Hiện Tại",
     "emergency": "Cấp cứu nha khoa? Gọi trực tiếp:"
   },
   "about": {
-    "title": "Về Nha Khoa Metal",
+    "title": "Về Smile Dental Clinic",
     "subtitle": "Xây dựng cho bệnh nhân quốc tế. Tin tưởng hơn 8 năm.",
     "story_heading": "Câu Chuyện Của Chúng Tôi",
-    "story": "Nha Khoa Metal được thành lập với một sứ mệnh duy nhất: làm cho dịch vụ nha khoa đẳng cấp thế giới trở nên dễ tiếp cận với bệnh nhân từ New Zealand, Úc và xa hơn.",
+    "story": "Smile Dental Clinic được thành lập với một sứ mệnh duy nhất: làm cho dịch vụ nha khoa đẳng cấp thế giới trở nên dễ tiếp cận với bệnh nhân từ New Zealand, Úc và xa hơn.",
     "mission_heading": "Sứ Mệnh Của Chúng Tôi",
     "mission": "Mọi bệnh nhân đều xứng đáng được chăm sóc nha khoa đáp ứng tiêu chuẩn quốc tế. Chi phí không bao giờ là lý do để ai đó sống với đau răng.",
     "team_heading": "Gặp Gỡ Các Chuyên Gia",
@@ -166,5 +170,29 @@
     "timeline_heading": "Quy Trình",
     "price_teaser": "Bạn có thể tiết kiệm bao nhiêu?",
     "price_cta": "Xem máy tính tiết kiệm đầy đủ"
+  },
+  "patientJourney": {
+    "heading": "Bệnh Nhân Quốc Tế Tìm Thấy Chúng Tôi Như Thế Nào",
+    "subheading": "Hành trình của bạn từ phương tiện truyền thông xã hội đến nụ cười được biến đổi",
+    "step1_title": "Khám Phá Trên Mạng Xã Hội",
+    "step1_desc": "Tìm thấy chúng tôi trên TikTok hoặc Instagram",
+    "step2_title": "Khám Phá Trang Web Của Chúng Tôi",
+    "step2_desc": "Tìm hiểu về điều trị & giá cả",
+    "step3_title": "Chat Trên WhatsApp",
+    "step3_desc": "Nhận câu trả lời tức thì 24/7",
+    "step4_title": "Đặt Lịch Hẹn Của Bạn",
+    "step4_desc": "Bảo đảm ngày điều trị của bạn"
+  },
+  "social": {
+    "label": "Xã Hội",
+    "heading": "Theo Dõi Các Phép Biến Đổi Của Chúng Tôi",
+    "subheading": "Xem những câu chuyện bệnh nhân thực tế trên phương tiện truyền thông xã hội",
+    "instagram_label": "Theo Dõi Trên Instagram",
+    "instagram_handle": "smiledentalclinic",
+    "instagram_followers": "42.3K Người Theo Dõi",
+    "tiktok_label": "Theo Dõi Trên TikTok",
+    "tiktok_handle": "smiledentalclinic",
+    "tiktok_followers": "128.6K Người Theo Dõi",
+    "cta_text": "Xem trước và sau, câu chuyện bệnh nhân, và mẹo về nha khoa trên các phương tiện truyền thông xã hội của chúng tôi"
   }
 }

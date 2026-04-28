@@ -3,24 +3,24 @@ import Link from "next/link";
 import { getLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "Dental Implants in Vietnam — Save Up to 75% vs NZ",
+  title: "Dental Implants — Save Up to 75% vs NZ",
   description:
-    "Get dental implants in Da Nang, Vietnam from ~NZD 1,100. Same Straumann & Nobel Biocare brands as Auckland clinics. Single implants completed in 5–7 days. Free consultation.",
+    "Get dental implants from ~NZD 1,100. Same Straumann & Nobel Biocare brands as Auckland clinics. Single implants completed in 5–7 days. Free consultation.",
 };
 
 const procedures = [
-  { name: "Single Tooth Implant", desc: "Titanium post + abutment + porcelain crown. One visit, permanent result.", nz: "NZD 5,000–8,000", metal: "~NZD 1,100–1,800" },
-  { name: "All-on-4 (full arch)", desc: "4 implants supporting a full arch of fixed teeth. Transform your smile in one trip.", nz: "NZD 25,000–40,000", metal: "~NZD 6,000–9,000" },
-  { name: "All-on-6", desc: "6 implants for maximum stability — ideal for complex cases.", nz: "NZD 32,000–50,000", metal: "~NZD 8,000–12,000" },
-  { name: "Bone Graft", desc: "Required when jaw bone density is insufficient for implant placement.", nz: "NZD 1,500–3,500", metal: "~NZD 350–700" },
-  { name: "Sinus Lift", desc: "Upper jaw augmentation procedure for implants in the back of the mouth.", nz: "NZD 2,000–4,500", metal: "~NZD 450–900" },
+  { name: "Single Tooth Implant", desc: "Titanium post + abutment + porcelain crown. One visit, permanent result.", nz: "NZD 5,000–8,000", clinic: "~NZD 1,100–1,800" },
+  { name: "All-on-4 (full arch)", desc: "4 implants supporting a full arch of fixed teeth. Transform your smile in one trip.", nz: "NZD 25,000–40,000", clinic: "~NZD 6,000–9,000" },
+  { name: "All-on-6", desc: "6 implants for maximum stability — ideal for complex cases.", nz: "NZD 32,000–50,000", clinic: "~NZD 8,000–12,000" },
+  { name: "Bone Graft", desc: "Required when jaw bone density is insufficient for implant placement.", nz: "NZD 1,500–3,500", clinic: "~NZD 350–700" },
+  { name: "Sinus Lift", desc: "Upper jaw augmentation procedure for implants in the back of the mouth.", nz: "NZD 2,000–4,500", clinic: "~NZD 450–900" },
 ];
 
 const faqs = [
   { q: "Are the implant brands the same quality as in NZ?", a: "Yes. We use Straumann, Nobel Biocare, Osstem, and MegaGen — the same brands used in top Auckland and Sydney clinics. The implant itself is identical; the cost difference comes from Vietnam's significantly lower operating costs." },
   { q: "Can I get an implant done in one trip?", a: "For single implants using same-day loading (immediate placement), many patients complete treatment in 5–7 days. More complex cases (multiple implants, bone grafts, All-on-4) may require two visits 3–6 months apart. We'll assess your case beforehand and design a travel plan that works." },
   { q: "What happens if something goes wrong after I fly home?", a: "All implant work comes with a written warranty. If there are any complications, we provide remote follow-up via video consultation, coordinate with your NZ/Aus dentist, and have a clear protocol for resolving issues — including provision for return visits if necessary." },
-  { q: "Is it safe to have surgery overseas?", a: "Metal Dental follows international infection control protocols, using hospital-grade sterilisation and sterile surgical kits. Our implantologist Dr. Nguyen Tuan Tu has 12+ years of implant experience and has placed 3,000+ implants for local and international patients." },
+  { q: "Is it safe to have surgery overseas?", a: "Smile Dental Clinic follows international infection control protocols, using hospital-grade sterilisation and sterile surgical kits. Our implantologist Dr. Nguyen Tuan Tu has 12+ years of implant experience and has placed 3,000+ implants for local and international patients." },
   { q: "Do I need a consultation before flying?", a: "We recommend it. A free video consultation with Dr. Nguyen before you book flights lets us assess your case, confirm suitability, and give you accurate pricing. You'll have all the information you need before any commitment." },
 ];
 
@@ -28,7 +28,7 @@ const timeline = [
   { day: "Before Flying", title: "Free Video Consultation", desc: "Share your X-rays or get a CT scan organised. We confirm suitability and price everything." },
   { day: "Day 1", title: "Arrival & Initial Assessment", desc: "Welcome appointment, CBCT scan, treatment planning. We confirm the final plan." },
   { day: "Day 2", title: "Implant Surgery", desc: "Titanium post placed under local anaesthetic. For same-day loading, a temporary crown is placed." },
-  { day: "Days 3–4", title: "Rest & Monitoring", desc: "Explore Da Nang! Brief check-up to confirm healing. Many patients do day trips to Hoi An." },
+  { day: "Days 3–4", title: "Rest & Monitoring", desc: "Relax and recover. Brief check-up to confirm healing." },
   { day: "Day 5–6", title: "Final Crown Placement", desc: "Permanent porcelain crown fitted. Final check. Records prepared for your home dentist." },
   { day: "Day 7", title: "Fly Home", desc: "Return home with a beautiful new smile and comprehensive care instructions." },
 ];
@@ -49,7 +49,7 @@ export default async function ImplantsPage() {
             <div>
               <p className="text-accent text-sm font-medium mb-1">Save up to 75% vs NZ</p>
               <h1 className="text-4xl md:text-6xl font-bold font-display text-off-white leading-tight">
-                Dental Implants<br />in Da Nang
+                Dental Implants<br />Made Affordable
               </h1>
             </div>
           </div>
@@ -86,8 +86,8 @@ export default async function ImplantsPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex-1">
-                    <div className="text-xs text-gray-600">Metal Dental</div>
-                    <div className="text-accent font-bold font-display">{p.metal}</div>
+                    <div className="text-xs text-gray-600">Our Clinic</div>
+                    <div className="text-accent font-bold font-display">{p.clinic}</div>
                   </div>
                   <Link href={locale === "vi" ? "/vi/book" : "/book"} className="shrink-0 bg-accent/10 border border-accent/30 text-accent text-xs px-3 py-1.5 rounded-lg hover:bg-accent/20 transition-colors">
                     Get Quote

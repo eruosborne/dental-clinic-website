@@ -15,12 +15,12 @@ export function SectionHeading({
   labelColor = "accent",
   className = "",
 }: SectionHeadingProps) {
-  const labelClasses = "text-gray-600";
+  const labelColorClass = labelColor === "gold" ? "text-gold" : "text-accent";
 
   return (
     <div className={`${centered ? "text-center" : ""} ${className}`}>
       {label && (
-        <p className={`text-sm font-semibold tracking-[0.15em] uppercase mb-3 font-display ${labelClasses}`}>
+        <p className={`text-sm font-semibold tracking-[0.15em] uppercase mb-3 font-display ${labelColorClass}`}>
           {label}
         </p>
       )}

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
+import { useLocalHref } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -24,10 +25,9 @@ const qualityPoints = [
 
 export default function WhyVietnam() {
   const t = useTranslations("why");
-  const locale = useLocale();
+  const localHref = useLocalHref();
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
-  const localHref = (p: string) => locale === "vi" ? `/vi${p}` : p;
 
   return (
     <section className="section bg-surface-dark/50">
@@ -67,7 +67,7 @@ export default function WhyVietnam() {
                   </div>
                   <div className="text-center text-gray-500 text-xs">{row.nz}</div>
                   <div className="text-center">
-                    <span className="bg-accent/15 text-accent text-xs font-bold px-2 py-0.5 rounded-full">{row.save}</span>
+                    <span className="bg-gold/15 text-gold text-xs font-bold px-2 py-0.5 rounded-full">{row.save}</span>
                   </div>
                 </div>
               ))}
@@ -117,20 +117,21 @@ export default function WhyVietnam() {
 
             {/* Da Nang info */}
             <div className="mt-8 glass rounded-2xl p-5">
-              <h4 className="font-display font-semibold text-black mb-3 text-sm">
-                ✈️ Da Nang is an easy trip from home
+              <h4 className="font-display font-semibold text-black mb-3 text-sm flex items-center gap-2">
+                <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+                Da Nang is an easy trip from home
               </h4>
               <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex justify-between">
-                  <span>🇦🇺 Sydney → Da Nang</span>
+                  <span>Sydney → Da Nang</span>
                   <span className="text-accent font-medium">~9 hours direct</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>🇳🇿 Auckland → Da Nang</span>
+                  <span>Auckland → Da Nang</span>
                   <span className="text-accent font-medium">~10–11 hours (1 stop)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>🏖️ Da Nang Int'l Airport → Clinic</span>
+                  <span>Da Nang Int'l Airport → Clinic</span>
                   <span className="text-accent font-medium">~10 minutes</span>
                 </div>
               </div>

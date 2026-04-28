@@ -42,7 +42,7 @@ export default function Header() {
               className="flex items-center gap-2.5 group"
             >
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center glow-accent">
-                <span className="text-primary font-bold text-sm font-display">M</span>
+                <span className="text-primary font-bold text-sm font-display">S</span>
               </div>
               <span className="font-display font-bold text-black text-lg tracking-tight group-hover:text-accent transition-colors duration-200">
                 {CLINIC_NAME}

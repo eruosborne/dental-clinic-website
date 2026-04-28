@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 type Message = { id: string; from: "user" | "bot"; text: string };
 
 const BOT_RESPONSES: Record<string, string> = {
-  default: "Thanks for your question! Our team specialises in helping NZ and Australian patients plan their dental trip to Da Nang. For personalised pricing and availability, I'd suggest booking a free consultation with our coordinator. Can I help with anything else?",
+  default: "Thanks for your question! Our team specialises in helping NZ and Australian patients plan their dental trip. For personalised pricing and availability, I'd suggest booking a free consultation with our coordinator. Can I help with anything else?",
   price: "Our pricing is significantly lower than NZ/Aus rates. As a guide: single implants start from ~USD 1,000 (≈NZD 1,600), porcelain veneers from ~USD 350/tooth, and full aligner treatment from ~USD 2,200. Want a personalised estimate?",
-  implant: "Dental implants at Metal Dental use Straumann, Nobel Biocare, and Osstem — the same brands used in top Auckland clinics. Treatment typically takes 5–7 days (for a single implant with same-day loading) or may require two visits for complex cases. Would you like to discuss your specific situation?",
+  implant: "Dental implants at Smile Dental Clinic use Straumann, Nobel Biocare, and Osstem — the same brands used in top Auckland clinics. Treatment typically takes 5–7 days (for a single implant with same-day loading) or may require two visits for complex cases. Would you like to discuss your specific situation?",
   veneer: "Our porcelain veneers are designed using digital smile planning — you'll see a preview before we begin. Most patients complete 6–10 veneers in 4–5 days. Our cosmetic dentist Dr. Le specialises in smile design. Want to book a consultation?",
-  safety: "Metal Dental follows international infection control protocols, uses hospital-grade sterilisation, and all our instruments are single-use where appropriate. Our doctors are trained in Vietnam and internationally, and we hold accreditations that meet the same standards as Australian dental practices.",
+  safety: "Smile Dental Clinic follows international infection control protocols, uses hospital-grade sterilisation, and all our instruments are single-use where appropriate. Our doctors are trained internationally, and we hold accreditations that meet the same standards as Australian dental practices.",
   english: "Yes! Our entire team speaks English. You'll always have an English-speaking coordinator available, and our doctors communicate directly with you in English throughout your treatment.",
   book: "Booking is simple — you can start with a free online consultation to discuss your needs and get a personalised treatment plan. No flights booked, no commitment. Ready to get started?",
 };
@@ -31,7 +31,7 @@ export default function ChatWidget() {
     {
       id: "welcome",
       from: "bot",
-      text: "Hi! I'm Metal Dental's AI assistant. Ask me anything about treatments, pricing, or what it's like to get dental work in Da Nang — I'm available 24/7, no matter what timezone you're in. 😊",
+      text: "Hi! I'm Smile Dental Clinic's AI assistant. Ask me anything about treatments, pricing, or what it's like to get dental work with us — I'm available 24/7, no matter what timezone you're in. 😊",
     },
   ]);
   const [input, setInput] = useState("");
@@ -101,7 +101,7 @@ export default function ChatWidget() {
                     <span className="text-accent text-sm">🤖</span>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold font-display text-black">Metal Dental AI</div>
+                    <div className="text-sm font-semibold font-display text-black">Smile Dental Clinic AI</div>
                     <div className="flex items-center gap-1.5">
                       <div className="w-1.5 h-1.5 bg-success rounded-full" />
                       <span className="text-xs text-gray-500">Available 24/7</span>

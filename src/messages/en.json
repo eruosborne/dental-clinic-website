@@ -7,13 +7,13 @@
     "contact": "Contact",
     "blog": "Blog",
     "book": "Book Free Consultation",
-    "language": "Tiếng Việt"
+    "language": "Ti\u1ebfng Vi\u1ec7t"
   },
   "hero": {
-    "eyebrow": "Da Nang, Vietnam · Trusted by patients from NZ & Australia",
+    "eyebrow": "Southeast Asia \u00b7 Trusted by patients from NZ & Australia",
     "headline": "Your best smile.",
     "headline2": "A fraction of the price.",
-    "subheadline": "Metal Dental combines internationally trained specialists, hospital-grade technology, and AI-powered support — so you get the dental work you've been putting off, without the Auckland or Sydney price tag.",
+    "subheadline": "Smile Dental Clinic combines internationally trained specialists, hospital-grade technology, and AI-powered support \u2014 so you get the dental work you've been putting off, without the Auckland or Sydney price tag.",
     "cta_primary": "Book Free Consultation",
     "cta_secondary": "Talk to Our AI Assistant",
     "cta_note": "No commitment. No flights booked. Just answers."
@@ -22,7 +22,7 @@
     "patients": "patients treated",
     "patients_sub": "From NZ, Australia & 18 countries",
     "years": "years in practice",
-    "years_sub": "Established in Da Nang",
+    "years_sub": "Established in Southeast Asia",
     "rating": "Google rating",
     "rating_sub": "verified reviews",
     "savings": "savings vs NZ/Aus",
@@ -30,10 +30,10 @@
   },
   "services": {
     "label": "What We Treat",
-    "heading": "Every treatment you need — at a price that makes sense",
+    "heading": "Every treatment you need \u2014 at a price that makes sense",
     "implants": {
       "name": "Dental Implants",
-      "desc": "Permanent, natural-looking tooth replacement. Same leading brands as Auckland clinics — at a fraction of the cost.",
+      "desc": "Permanent, natural-looking tooth replacement. Same leading brands as Auckland clinics \u2014 at a fraction of the cost.",
       "price": "Save up to 75% vs NZ"
     },
     "cosmetic": {
@@ -48,43 +48,43 @@
     },
     "aligners": {
       "name": "Clear Aligners",
-      "desc": "Straighter teeth with discreet aligner treatment. Start in Da Nang, monitor progress from home.",
+      "desc": "Straighter teeth with discreet aligner treatment. Start your treatment, then monitor progress from home.",
       "price": "Save up to 70% vs NZ"
     },
     "see_more": "See treatments",
     "overview_cta": "View all services"
   },
   "why": {
-    "label": "Why Da Nang?",
+    "label": "Why Choose Us?",
     "heading": "The same quality. A completely different price.",
     "col1_heading": "A Cost Reality Check",
-    "col1_body": "Here's what the same treatment costs in New Zealand vs. at Metal Dental in Da Nang. Even after flights and accommodation, most patients save thousands.",
+    "col1_body": "Here's what the same treatment costs in New Zealand vs. at Smile Dental Clinic. Even after flights and accommodation, most patients save thousands.",
     "col1_cta": "Calculate your savings",
     "col2_heading": "Quality you can verify",
     "col2_point1": "Same implant brands as your Auckland dentist (Straumann, Nobel Biocare)",
-    "col2_point2": "3D digital treatment planning — your result mapped before we begin",
+    "col2_point2": "3D digital treatment planning \u2014 your result mapped before we begin",
     "col2_point3": "English-speaking team and dedicated international patient coordinator",
     "col2_point4": "Written treatment records sent to your home dentist",
     "col2_point5": "Warranty on all restorative and cosmetic work",
-    "col2_note": "Vietnam's lower operating costs are why it's cheaper — not lower quality."
+    "col2_note": "Vietnam's lower operating costs are why it's cheaper \u2014 not lower quality."
   },
   "ai": {
     "label": "Powered by AI",
     "heading": "The tools that make dental tourism feel easy",
     "chat_title": "24/7 AI Dental Concierge",
-    "chat_desc": "Ask anything, any time — treatments, pricing, what to expect. Our AI responds in seconds, not business hours. It's midnight in Auckland. Your questions don't wait.",
+    "chat_desc": "Ask anything, any time \u2014 treatments, pricing, what to expect. Our AI responds in seconds, not business hours. It's midnight in Auckland. Your questions don't wait.",
     "chat_cta": "Chat now",
     "preview_title": "See Your Result First",
-    "preview_desc": "Upload a photo of your smile and our AI shows a simulated preview of potential results — veneers, whitening, or orthodontics. Not a promise, but a powerful starting point.",
+    "preview_desc": "Upload a photo of your smile and our AI shows a simulated preview of potential results \u2014 veneers, whitening, or orthodontics. Not a promise, but a powerful starting point.",
     "preview_cta": "Try Smile Preview",
     "symptom_title": "Not Sure What You Need?",
-    "symptom_desc": "Answer 5 quick questions and we'll suggest the most likely treatment path — and whether it's urgent or can wait for your next planned trip.",
+    "symptom_desc": "Answer 5 quick questions and we'll suggest the most likely treatment path \u2014 and whether it's urgent or can wait for your next planned trip.",
     "symptom_cta": "Check your symptoms"
   },
   "testimonials": {
     "label": "Patient Stories",
     "heading": "Real patients. Real results. Real savings.",
-    "subheading": "These are demo placeholder testimonials — real reviews from NZ and Australian patients will be featured here.",
+    "subheading": "These are demo placeholder testimonials \u2014 real reviews from NZ and Australian patients will be featured here.",
     "verified": "Verified Google Review",
     "treatment": "Treatment",
     "saved": "Saved",
@@ -95,15 +95,19 @@
     "heading": "Ready to stop putting it off?",
     "subheading": "Get a free consultation. Ask our AI first, or speak directly to our international patient coordinator. Your first step costs nothing.",
     "primary": "Book Free Consultation",
-    "secondary": "Chat with AI — Free & Instant",
-    "note": "Responds within 24 hours · English-speaking · No pressure"
+    "secondary": "Chat with AI \u2014 Free & Instant",
+    "note": "Responds within 24 hours \u00b7 English-speaking \u00b7 No pressure",
+    "whatsapp": "WhatsApp",
+    "ai_chat": "AI Chat",
+    "book": "Book Online",
+    "email": "Email"
   },
   "footer": {
-    "tagline": "World-class dental care in Da Nang, Vietnam. Trusted by patients from New Zealand, Australia, and 18+ countries.",
+    "tagline": "World-class dental care in Southeast Asia. Trusted by patients from New Zealand, Australia, and 18+ countries.",
     "quick_links": "Quick Links",
     "contact_us": "Contact Us",
     "follow_us": "Follow Us",
-    "hours": "Mon – Sun: 8:00 AM – 5:00 PM (Vietnam Time, GMT+7)",
+    "hours": "Mon \u2013 Sun: 8:00 AM \u2013 5:00 PM (Local Time)",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
@@ -127,11 +131,11 @@
     "step1": "We review your request and prepare a personalised treatment plan",
     "step2": "Our coordinator emails you with costs, timeline, and answers to your questions",
     "step3": "Optional: video consultation before you book flights",
-    "step4": "Arrive in Da Nang. We take care of everything from there."
+    "step4": "Arrive at our clinic. We take care of everything from there."
   },
   "contact": {
     "title": "Get in Touch",
-    "subtitle": "Questions? Our English-speaking team and AI assistant are here to help — whatever timezone you're in.",
+    "subtitle": "Questions? Our English-speaking team and AI assistant are here to help \u2014 whatever timezone you're in.",
     "form_heading": "Send a Message",
     "name": "Full Name",
     "email": "Email Address",
@@ -139,18 +143,18 @@
     "language": "Preferred Language",
     "message": "Message",
     "submit": "Send Message",
-    "or_chat": "Or chat with our AI instantly →",
+    "or_chat": "Or chat with our AI instantly \u2192",
     "address_heading": "Find Us",
     "hours_heading": "Opening Hours",
-    "hours": "Monday – Sunday, 8:00 AM – 5:00 PM Vietnam Time",
+    "hours": "Monday \u2013 Sunday, 8:00 AM \u2013 5:00 PM Local Time",
     "time_heading": "Current Time",
     "emergency": "Dental emergency? Call us directly:"
   },
   "about": {
-    "title": "About Metal Dental",
+    "title": "About Smile Dental Clinic",
     "subtitle": "Built for international patients. Trusted for over 8 years.",
     "story_heading": "Our Story",
-    "story": "Metal Dental was founded with a single mission: to make world-class dental care accessible to patients from New Zealand, Australia, and beyond — without the world-class price tag. Located in Da Nang, Vietnam's most liveable coastal city, we've built our reputation on clinical excellence, genuine English communication, and AI-powered tools that eliminate the uncertainty of dental tourism.",
+    "story": "Smile Dental Clinic was founded with a single mission: to make world-class dental care accessible to patients from New Zealand, Australia, and beyond \u2014 without the world-class price tag. We've built our reputation on clinical excellence, genuine English communication, and AI-powered tools that eliminate the uncertainty of dental tourism.",
     "mission_heading": "Our Mission",
     "mission": "Every patient who walks through our doors deserves dental care that meets international standards. We believe cost should never be the reason someone lives with dental pain or a smile they're not proud of.",
     "team_heading": "Meet Our Specialists",
@@ -166,5 +170,29 @@
     "timeline_heading": "What to Expect",
     "price_teaser": "How much could you save?",
     "price_cta": "See full savings calculator"
+  },
+  "patientJourney": {
+    "heading": "How International Patients Find Us",
+    "subheading": "Your journey from social media to a transformed smile",
+    "step1_title": "Discover on Social Media",
+    "step1_desc": "Find us on TikTok or Instagram",
+    "step2_title": "Explore Our Website",
+    "step2_desc": "Learn about treatments & pricing",
+    "step3_title": "Chat on WhatsApp",
+    "step3_desc": "Get instant answers 24/7",
+    "step4_title": "Book Your Appointment",
+    "step4_desc": "Secure your treatment date"
+  },
+  "social": {
+    "label": "Social Proof",
+    "heading": "Follow Our Transformations",
+    "subheading": "See real patient stories on social media",
+    "instagram_label": "Follow on Instagram",
+    "instagram_handle": "smiledentalclinic",
+    "instagram_followers": "42.3K Followers",
+    "tiktok_label": "Follow on TikTok",
+    "tiktok_handle": "smiledentalclinic",
+    "tiktok_followers": "128.6K Followers",
+    "cta_text": "See before & afters, patient stories, and dental tips across our social media"
   }
 }

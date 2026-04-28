@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   return {
-    title: `${post.title} — Metal Dental Blog`,
+    title: `${post.title} — Smile Dental Clinic Blog`,
     description: post.excerpt,
   };
 }
@@ -85,7 +85,7 @@ export default async function BlogPostPage({ params }: Props) {
               👨‍⚕️
             </div>
             <span className="text-gray-700 text-sm font-medium">{post.author}</span>
-            <span className="text-gray-500 text-sm">· Metal Dental Specialist</span>
+            <span className="text-gray-500 text-sm">· Smile Dental Clinic Specialist</span>
           </div>
         </div>
       </div>
@@ -113,9 +113,9 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
           <div>
             <div className="font-display font-bold text-off-white">{post.author}</div>
-            <div className="text-accent text-sm font-medium mt-0.5">Metal Dental Specialist</div>
+            <div className="text-accent text-sm font-medium mt-0.5">Smile Dental Clinic Specialist</div>
             <p className="text-gray-600 text-sm leading-relaxed mt-2">
-              One of Metal Dental's specialist team, writing to help international patients from New
+              One of Smile Dental Clinic's specialist team, writing to help international patients from New
               Zealand and Australia make confident, informed decisions about dental care in Da Nang.
             </p>
           </div>

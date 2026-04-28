@@ -3,9 +3,9 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Dental Tourism Blog — Metal Dental Da Nang",
+  title: "Dental Tourism Blog — Smile Dental Clinic",
   description:
-    "Guides, tips, and real stories for New Zealanders and Australians considering dental work in Da Nang, Vietnam. Treatments, costs, recovery, and what to expect.",
+    "Guides, tips, and real stories for New Zealanders and Australians considering dental tourism. Treatments, costs, recovery, and what to expect.",
 };
 
 const categoryColors: Record<string, string> = {

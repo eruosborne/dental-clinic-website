@@ -3,24 +3,24 @@ import Link from "next/link";
 import { getLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "Cosmetic Dentistry Vietnam — Veneers, Whitening & Aligners",
+  title: "Cosmetic Dentistry — Veneers, Whitening & Aligners",
   description:
-    "Porcelain veneers from ~NZD 350/tooth, professional whitening, clear aligners, and smile design in Da Nang, Vietnam. Save up to 80% vs NZ/Aus. Free consultation.",
+    "Porcelain veneers from ~NZD 350/tooth, professional whitening, clear aligners, and smile design. Save up to 80% vs NZ/Aus. Free consultation.",
 };
 
 const procedures = [
-  { name: "Porcelain Veneers", desc: "Ultra-thin shells bonded to teeth for a perfect smile. Digital preview before treatment.", nz: "NZD 1,500–2,500 each", metal: "~NZD 350–450 each" },
-  { name: "Porcelain Crowns", desc: "Full coverage restoration for damaged or discoloured teeth.", nz: "NZD 1,500–2,200 each", metal: "~NZD 280–380 each" },
-  { name: "Zirconia Crowns", desc: "Maximum strength crowns with natural aesthetics — ideal for back teeth.", nz: "NZD 1,800–2,500 each", metal: "~NZD 320–430 each" },
-  { name: "Teeth Whitening (in-chair)", desc: "Professional Philips Zoom or equivalent in-chair whitening session.", nz: "NZD 600–900", metal: "~NZD 100–150" },
-  { name: "Clear Aligners (full case)", desc: "Complete aligner treatment — impressions in Da Nang, wear from home.", nz: "NZD 8,000–12,000", metal: "~NZD 2,000–3,200" },
-  { name: "Smile Makeover Package", desc: "Veneers + whitening + any additional treatments combined at package price.", nz: "NZD 15,000–30,000+", metal: "~NZD 3,000–6,000" },
+  { name: "Porcelain Veneers", desc: "Ultra-thin shells bonded to teeth for a perfect smile. Digital preview before treatment.", nz: "NZD 1,500–2,500 each", clinic: "~NZD 350–450 each" },
+  { name: "Porcelain Crowns", desc: "Full coverage restoration for damaged or discoloured teeth.", nz: "NZD 1,500–2,200 each", clinic: "~NZD 280–380 each" },
+  { name: "Zirconia Crowns", desc: "Maximum strength crowns with natural aesthetics — ideal for back teeth.", nz: "NZD 1,800–2,500 each", clinic: "~NZD 320–430 each" },
+  { name: "Teeth Whitening (in-chair)", desc: "Professional Philips Zoom or equivalent in-chair whitening session.", nz: "NZD 600–900", clinic: "~NZD 100–150" },
+  { name: "Clear Aligners (full case)", desc: "Complete aligner treatment — impressions taken, wear from home.", nz: "NZD 8,000–12,000", clinic: "~NZD 2,000–3,200" },
+  { name: "Smile Makeover Package", desc: "Veneers + whitening + any additional treatments combined at package price.", nz: "NZD 15,000–30,000+", clinic: "~NZD 3,000–6,000" },
 ];
 
 const faqs = [
   { q: "How do I know what my veneers will look like?", a: "Before we prepare a single tooth, Dr. Le creates a Digital Smile Design (DSD) — a computer-generated preview of your result. You can review and adjust the design until it's exactly what you want. You can also try our AI Smile Preview tool for a quick simulation." },
   { q: "Will veneers look natural?", a: "Modern porcelain veneers are designed to mimic the light-reflecting properties of natural enamel. They're custom-shaded to match your desired whiteness and shaped to fit your face. The results are indistinguishable from natural teeth — unless you tell people." },
-  { q: "How long do veneers last?", a: "High-quality porcelain veneers typically last 10–15 years with proper care. Metal Dental uses only premium E.max and Lava porcelain brands. We provide a warranty on all veneer work." },
+  { q: "How long do veneers last?", a: "High-quality porcelain veneers typically last 10–15 years with proper care. Smile Dental Clinic uses only premium E.max and Lava porcelain brands. We provide a warranty on all veneer work." },
   { q: "Can clear aligners really be started in Vietnam and continued at home?", a: "Yes. After taking precise dental impressions or using digital scanning on your first visit, your custom aligner trays are manufactured. You take all your trays home and progress through them on schedule. We monitor your progress via video check-ins and coordinate with your local dentist if needed." },
 ];
 
@@ -28,7 +28,7 @@ const timeline = [
   { day: "Before Flying", title: "Smile Preview & Consultation", desc: "Use our AI tool or video consult to discuss your goals. We prepare a digital smile design." },
   { day: "Day 1", title: "Assessment & Planning", desc: "Photographs, X-rays, shade matching. Finalise the design together." },
   { day: "Day 2", title: "Preparation", desc: "Minimal tooth preparation. Temporary veneers placed — you leave looking great." },
-  { day: "Days 3–4", title: "Lab Fabrication", desc: "Your permanent veneers are custom-crafted. Enjoy Da Nang — the beach, the food, Hoi An." },
+  { day: "Days 3–4", title: "Lab Fabrication", desc: "Your permanent veneers are custom-crafted. Relax and enjoy local attractions." },
   { day: "Day 5–6", title: "Bonding & Final Fitting", desc: "Permanent veneers bonded. Final adjustments. Before/after photographs." },
   { day: "Day 7", title: "Fly Home", desc: "Return home with a transformed smile and comprehensive maintenance instructions." },
 ];
@@ -48,7 +48,7 @@ export default async function CosmeticPage() {
             <div>
               <p className="text-gold text-sm font-medium mb-1">Save up to 80% vs NZ</p>
               <h1 className="text-4xl md:text-6xl font-bold font-display text-off-white leading-tight">
-                Cosmetic Dentistry<br />in Da Nang
+                Cosmetic Dentistry<br />Your Dream Smile
               </h1>
             </div>
           </div>
@@ -85,8 +85,8 @@ export default async function CosmeticPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex-1">
-                    <div className="text-xs text-gray-600">Metal Dental</div>
-                    <div className="text-accent font-bold font-display">{p.metal}</div>
+                    <div className="text-xs text-gray-600">Our Clinic</div>
+                    <div className="text-accent font-bold font-display">{p.clinic}</div>
                   </div>
                   <Link href={locale === "vi" ? "/vi/book" : "/book"} className="shrink-0 bg-accent/10 border border-accent/30 text-accent text-xs px-3 py-1.5 rounded-lg hover:bg-accent/20 transition-colors">Get Quote</Link>
                 </div>

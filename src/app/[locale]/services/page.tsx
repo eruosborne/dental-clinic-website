@@ -13,7 +13,7 @@ export async function generateMetadata({
   return {
     title: "Dental Services — Implants, Veneers, Aligners & More",
     description:
-      "Comprehensive dental services for NZ and Australian patients in Da Nang, Vietnam. Dental implants, porcelain veneers, clear aligners, general dentistry — all at 60–80% less than home.",
+      "Comprehensive dental services for NZ and Australian patients. Dental implants, porcelain veneers, clear aligners, general dentistry — all at 60–80% less than home.",
   };
 }
 
@@ -25,7 +25,7 @@ const services = [
     tagline: "The permanent solution for missing teeth",
     desc: "Replace one tooth or a full arch with titanium implants that look, feel, and function like your natural teeth. Same brands as Auckland clinics — 75% less.",
     nzCost: "NZD 5,000–8,000 per implant",
-    metalCost: "~NZD 1,100–1,800 equiv.",
+    clinicCost: "~NZD 1,100–1,800 equiv.",
     timeframe: "5–7 days (single implant)",
     color: "from-accent/20 to-accent/5",
     border: "border-accent/20",
@@ -37,7 +37,7 @@ const services = [
     tagline: "Your smile, completely redesigned",
     desc: "Porcelain veneers, crowns, teeth whitening, and digital smile design. See your result before treatment begins with our AI Smile Preview tool.",
     nzCost: "NZD 1,500–2,500 per veneer",
-    metalCost: "~NZD 350–450 equiv.",
+    clinicCost: "~NZD 350–450 equiv.",
     timeframe: "4–6 days (6–10 veneers)",
     color: "from-accent/15 to-accent/3",
     border: "border-accent/20",
@@ -49,7 +49,7 @@ const services = [
     tagline: "Comprehensive care for your whole mouth",
     desc: "Fillings, root canals, extractions, deep cleanings, and check-ups. Thorough, comfortable, and priced to make quality care accessible.",
     nzCost: "NZD 800–3,500+",
-    metalCost: "~NZD 80–500 equiv.",
+    clinicCost: "~NZD 80–500 equiv.",
     timeframe: "1–3 days",
     color: "from-white/10 to-white/3",
     border: "border-white/15",
@@ -59,9 +59,9 @@ const services = [
     icon: "😁",
     name: "Clear Aligners",
     tagline: "Straighter teeth without the metal",
-    desc: "Start your aligner treatment in Da Nang and continue monitoring from home. Most patients need just one visit to get impressions taken and aligners made.",
+    desc: "Start your aligner treatment with us and continue monitoring from home. Most patients need just one visit to get impressions taken and aligners made.",
     nzCost: "NZD 8,000–12,000",
-    metalCost: "~NZD 2,000–3,200 equiv.",
+    clinicCost: "~NZD 2,000–3,200 equiv.",
     timeframe: "5–7 days initial visit",
     color: "from-accent/15 to-transparent",
     border: "border-accent/15",
@@ -116,7 +116,7 @@ export default async function ServicesPage({
               <div className="grid grid-cols-3 gap-3 mt-2">
                 {[
                   { label: "NZ Cost", value: svc.nzCost, dim: true },
-                  { label: "Metal Dental", value: svc.metalCost, dim: false },
+                  { label: "Our Clinic", value: svc.clinicCost, dim: false },
                   { label: "Timeline", value: svc.timeframe, dim: false },
                 ].map((item) => (
                   <div key={item.label} className="bg-gray-100 rounded-xl p-3">

@@ -3,9 +3,9 @@ import { ContactForm } from "./ContactForm";
 import { CLINIC_ADDRESS, CLINIC_EMAIL, CLINIC_PHONE_1, CLINIC_PHONE_2, CLINIC_WHATSAPP } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact Metal Dental Da Nang — English-Speaking Team",
+  title: "Contact Smile Dental Clinic — English-Speaking Team",
   description:
-    "Contact Metal Dental in Da Nang, Vietnam. English-speaking team, AI assistant available 24/7. Reach us via form, WhatsApp, phone, or email.",
+    "Contact Smile Dental Clinic. English-speaking team, AI assistant available 24/7. Reach us via form, WhatsApp, phone, or email.",
 };
 
 export default function ContactPage() {

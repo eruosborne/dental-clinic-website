@@ -4,22 +4,15 @@ export function LocalBusinessJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Dentist", "MedicalBusiness"],
-    name: "Metal Dental",
-    description: "Premium dental clinic in Da Nang, Vietnam specialising in dental tourism for patients from New Zealand and Australia. Dental implants, veneers, cosmetic dentistry.",
-    url: "https://nhakhoametal.com",
+    name: "Smile Dental Clinic",
+    description: "Premium dental clinic specialising in dental tourism for patients from New Zealand and Australia. Dental implants, veneers, cosmetic dentistry.",
+    url: "https://smiledental.clinic",
     email: CLINIC_EMAIL,
     telephone: CLINIC_PHONE_1,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "5 Nguyễn Hữu Thọ",
-      addressLocality: "Hải Châu",
-      addressRegion: "Đà Nẵng",
-      addressCountry: "VN",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 16.0678,
-      longitude: 108.2208,
+      streetAddress: "123 Beach Road",
+      addressCountry: "Southeast Asia",
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -34,12 +27,10 @@ export function LocalBusinessJsonLd() {
       bestRating: 5,
       worstRating: 1,
     },
-    currenciesAccepted: "USD, VND, NZD, AUD",
+    currenciesAccepted: "USD, NZD, AUD",
     paymentAccepted: "Cash, Credit Card, Bank Transfer",
     priceRange: "$$",
-    hasMap: "https://maps.app.goo.gl/SQKkfEeaUyjmZfs8A",
     sameAs: [
-      "https://www.facebook.com/nhakhoametal",
     ],
     medicalSpecialty: [
       "Dentistry",

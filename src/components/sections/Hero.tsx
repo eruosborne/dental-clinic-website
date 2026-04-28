@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
+import { useLocalHref } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 const item = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } };
@@ -8,8 +9,7 @@ const container = { hidden: {}, visible: { transition: { staggerChildren: 0.12 }
 
 export default function Hero() {
   const t = useTranslations("hero");
-  const locale = useLocale();
-  const localHref = (p: string) => locale === "vi" ? `/vi${p}` : p;
+  const localHref = useLocalHref();
 
   return (
     <section className="relative min-h-screen flex items-center gradient-mesh overflow-hidden">

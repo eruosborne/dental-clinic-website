@@ -7,8 +7,10 @@
   --color-navy: #0A1628;
   --color-accent: #0A1628;
   --color-accent-hover: #051020;
-  --color-gold: #0A1628;
+  --color-gold: #C8973E;
+  --color-gold-hover: #B5862F;
   --color-off-white: #1A1A1A;
+  --color-text-dark: #1A1A1A;
   --color-muted: #6B7280;
   --color-surface-dark: #F0F2F5;
   --color-success: #10B981;
@@ -29,7 +31,7 @@ body {
   color: #2D2D2D;
   font-family: var(--font-body);
   line-height: 1.6;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 30px rgba(10,22,40,0.2), 0 0 60px rgba(10,22,40,0.06);
 }
 
-.glow-gold { box-shadow: 0 0 20px rgba(10,22,40,0.2); }
+.glow-gold { box-shadow: 0 0 20px rgba(200,151,62,0.25), 0 0 50px rgba(200,151,62,0.08); }
 
 .dot-grid {
   background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
@@ -78,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient-gold {
-  background: linear-gradient(135deg, #0A1628 0%, #1a2d42 100%);
+  background: linear-gradient(135deg, #C8973E 0%, #E0B86A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -109,3 +111,12 @@ h1, h2, h3, h4, h5, h6 {
 .chat-scroll { scrollbar-width: thin; scrollbar-color: #E0E0E0 transparent; }
 .chat-scroll::-webkit-scrollbar { width: 4px; }
 .chat-scroll::-webkit-scrollbar-thumb { background: #E0E0E0; border-radius: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}

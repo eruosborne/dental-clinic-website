@@ -1,11 +1,21 @@
-export const CLINIC_NAME = "Metal Dental";
-export const CLINIC_TAGLINE = "World-Class Dental Care. Vietnam Prices.";
-export const CLINIC_ADDRESS = "5 Nguyễn Hữu Thọ, Hòa Thuận Tây, Hải Châu, Đà Nẵng";
-export const CLINIC_EMAIL = "nhakhoametal@gmail.com";
-export const CLINIC_PHONE_1 = "+84 911 555 858";
-export const CLINIC_PHONE_2 = "+84 704 899 992";
-export const CLINIC_WHATSAPP = "84911555858";
-export const CLINIC_MAPS_URL = "https://maps.app.goo.gl/SQKkfEeaUyjmZfs8A";
+export const CLINIC_NAME = "Smile Dental Clinic";
+export const CLINIC_TAGLINE = "World-Class Dental Care at Southeast Asia Prices.";
+export const CLINIC_ADDRESS = "123 Beach Road, [Your City]";
+export const CLINIC_EMAIL = "hello@smiledental.clinic";
+export const CLINIC_PHONE_1 = "+62 800 000 0000";
+export const CLINIC_PHONE_2 = "+62 800 000 0001";
+export const CLINIC_WHATSAPP = "62800000000";
+export const CLINIC_MAPS_URL = "#";
+
+// Social Media
+export const CLINIC_INSTAGRAM = "#";
+export const CLINIC_TIKTOK = "#";
+export const CLINIC_FACEBOOK = "#";
+export const CLINIC_YOUTUBE = "#";
+
+// WhatsApp
+export const WHATSAPP_PREFILL_TEXT = "Hi,%20I'm%20interested%20in%20dental%20treatment";
+export const WHATSAPP_URL = `https://wa.me/${CLINIC_WHATSAPP}?text=${WHATSAPP_PREFILL_TEXT}`;
 
 export const STATS = {
   patientsServed: 2400,
@@ -56,7 +66,7 @@ export const SERVICES = [
     name: "Dental Implants",
     shortDesc: "Permanent tooth replacement using titanium implants — the gold standard.",
     nzPrice: "NZD 5,000–8,000",
-    metalPrice: "NZD 900–1,800 equiv.",
+    clinicPrice: "NZD 900–1,800 equiv.",
     savings: "Up to 75%",
   },
   {
@@ -65,7 +75,7 @@ export const SERVICES = [
     name: "Cosmetic Dentistry",
     shortDesc: "Porcelain veneers, crowns, and whitening — your smile, redesigned.",
     nzPrice: "NZD 1,500–2,500 per tooth",
-    metalPrice: "NZD 250–450 equiv.",
+    clinicPrice: "NZD 250–450 equiv.",
     savings: "Up to 80%",
   },
   {
@@ -74,7 +84,7 @@ export const SERVICES = [
     name: "General Dentistry",
     shortDesc: "Comprehensive care — fillings, root canals, cleanings, extractions.",
     nzPrice: "NZD 800–3,000",
-    metalPrice: "NZD 80–500 equiv.",
+    clinicPrice: "NZD 80–500 equiv.",
     savings: "Up to 70%",
   },
   {
@@ -83,7 +93,7 @@ export const SERVICES = [
     name: "Clear Aligners",
     shortDesc: "Straighter teeth with discreet aligner treatment, monitored remotely.",
     nzPrice: "NZD 8,000–12,000",
-    metalPrice: "NZD 2,000–3,500 equiv.",
+    clinicPrice: "NZD 2,000–3,500 equiv.",
     savings: "Up to 70%",
   },
 ];
@@ -103,7 +113,7 @@ export const PRICING_DATA = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    quote: "I was nervous about flying to Vietnam for dental work, but Metal Dental completely changed my mind. The clinic is immaculate, the team speaks perfect English, and my implants look and feel incredible. I saved over $9,000 compared to my Auckland quote.",
+    quote: "I was nervous about traveling for dental work, but Smile Dental completely changed my mind. The clinic is immaculate, the team speaks perfect English, and my implants look and feel incredible. I saved over $9,000 compared to my home country quote.",
     name: "Sarah M.",
     location: "Auckland, NZ",
     flag: "🇳🇿",
@@ -113,7 +123,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 2,
-    quote: "I got 8 veneers done in 6 days — including a day trip to Hoi An! The digital smile preview they showed me beforehand was exactly what I ended up with. The quality is genuinely world-class and the price was a fraction of what I was quoted in Sydney.",
+    quote: "I got 8 veneers done in 6 days — including time to explore the local area! The digital smile preview they showed me beforehand was exactly what I ended up with. The quality is genuinely world-class and the price was a fraction of what I was quoted in my country.",
     name: "James T.",
     location: "Sydney, AU",
     flag: "🇦🇺",
@@ -123,7 +133,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 3,
-    quote: "The AI chatbot was actually what convinced me. I asked questions at midnight NZ time and got proper answers instantly. By the time I got on the plane I knew exactly what to expect. Da Nang is beautiful, the clinic is stunning, and my smile is completely transformed.",
+    quote: "The AI chatbot was actually what convinced me. I asked questions at midnight my time and got proper answers instantly. By the time I got on the plane I knew exactly what to expect. The clinic is stunning, and my smile is completely transformed.",
     name: "Rachel K.",
     location: "Christchurch, NZ",
     flag: "🇳🇿",

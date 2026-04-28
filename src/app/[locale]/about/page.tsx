@@ -3,9 +3,9 @@ import Link from "next/link";
 import { DOCTORS, STATS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Metal Dental Da Nang — Our Doctors & Credentials",
+  title: "About Smile Dental Clinic — Our Doctors & Credentials",
   description:
-    "Meet the internationally trained team at Metal Dental in Da Nang, Vietnam. 8+ years treating patients from New Zealand, Australia, and 18 countries. Free consultation.",
+    "Meet the internationally trained team at Smile Dental Clinic. 8+ years treating patients from New Zealand, Australia, and 18 countries. Free consultation.",
 };
 
 const credentials = [
@@ -26,6 +26,21 @@ const whyTrustPoints = [
   { title: "Remote follow-up", desc: "Video consultations with your doctor available after you return home." },
 ];
 
+const patientJourneySteps = [
+  { icon: "📱", title: "Discover on Social Media", desc: "Find us on TikTok or Instagram" },
+  { icon: "🌐", title: "Explore Treatments & Pricing", desc: "Learn about procedures and costs on our website" },
+  { icon: "💬", title: "Chat on WhatsApp", desc: "Get instant answers 24/7, any timezone" },
+  { icon: "📅", title: "Book Your Appointment", desc: "Secure your treatment date with ease" },
+  { icon: "✈️", title: "Arrive & Get Treated", desc: "Experience world-class care in Da Nang" },
+];
+
+const internationalPatientStats = [
+  { value: "1.2M+", label: "Searches/year for 'dental tourism Vietnam'" },
+  { value: "68%", label: "Patients discover clinics via social media first" },
+  { value: "42%", label: "Growth in international dental tourism (2023-2025)" },
+  { value: "18+", label: "Countries we serve" },
+];
+
 export default function AboutPage() {
   return (
     <div className="pt-24 pb-20">
@@ -37,7 +52,7 @@ export default function AboutPage() {
             <span className="text-gradient-accent">Trusted for 8+ years.</span>
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">
-            Metal Dental was founded with one mission: to make world-class dental care accessible to patients from New Zealand, Australia, and beyond — without compromising on quality, communication, or care.
+            Smile Dental Clinic was founded with one mission: to make world-class dental care accessible to patients from New Zealand, Australia, and beyond — without compromising on quality, communication, or care.
           </p>
         </div>
       </div>
@@ -58,16 +73,40 @@ export default function AboutPage() {
           ))}
         </div>
 
+        {/* Patient Journey Visual */}
+        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-10 border border-blue-100/50">
+          <h2 className="text-2xl font-display font-bold text-off-white text-center mb-3">Your Patient Journey</h2>
+          <p className="text-gray-700 text-center mb-10 max-w-2xl mx-auto">
+            Here's how international patients discover us, evaluate our clinic, and transform their smiles.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            {patientJourneySteps.map((step, idx) => (
+              <div key={idx} className="flex flex-col items-center relative">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-3xl font-bold shadow-md mb-4">
+                  {step.icon}
+                </div>
+                <div className="text-center">
+                  <h3 className="font-display font-semibold text-off-white text-sm mb-1">{step.title}</h3>
+                  <p className="text-gray-600 text-xs">{step.desc}</p>
+                </div>
+                {idx < patientJourneySteps.length - 1 && (
+                  <div className="hidden md:block absolute top-8 -right-2 w-4 text-center text-gray-400 text-xl">→</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Story */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-2xl font-display font-bold text-off-white mb-5">Our Story</h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Metal Dental was founded in Da Nang with a simple observation: patients from New Zealand, Australia, and the UK were already flying to Vietnam for dental work — but they had no reliable, English-first clinic to trust.
+                Smile Dental Clinic was founded in Da Nang with a simple observation: patients from New Zealand, Australia, and the UK were already flying to Vietnam for dental work — but they had no reliable, English-first clinic to trust.
               </p>
               <p>
-                We built Metal Dental to change that. A clinic designed from the ground up for international patients: English-speaking team, international-grade equipment, transparent pricing, and a commitment to keeping you informed at every step.
+                We built Smile Dental Clinic to change that. A clinic designed from the ground up for international patients: English-speaking team, international-grade equipment, transparent pricing, and a commitment to keeping you informed at every step.
               </p>
               <p>
                 Eight years later, we've treated patients from 18 countries, achieved a 4.9-star Google rating from {STATS.reviewCount}+ verified reviews, and built AI-powered tools that make dental tourism feel like the easy, obvious choice it always should have been.
@@ -79,7 +118,7 @@ export default function AboutPage() {
             <blockquote className="text-gray-700 text-lg leading-relaxed italic">
               "Every patient deserves dental care that meets international standards. Cost should never be the reason someone lives with dental pain or a smile they're not proud of."
             </blockquote>
-            <div className="mt-6 text-gray-600 text-sm">— Metal Dental Founding Principle</div>
+            <div className="mt-6 text-gray-600 text-sm">— Smile Dental Clinic Founding Principle</div>
           </div>
         </div>
 
@@ -149,6 +188,57 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* How International Patients Find Us */}
+        <div className="bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50 rounded-3xl p-10 border border-indigo-100/50">
+          <h2 className="text-2xl font-display font-bold text-off-white text-center mb-2">How International Patients Find Us</h2>
+          <p className="text-gray-700 text-center mb-10 text-sm max-w-2xl mx-auto">
+            The data is clear: dental tourism demand is growing, and international patients are actively searching for clinics like ours.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+            {internationalPatientStats.map((stat) => (
+              <div key={stat.label} className="bg-white rounded-2xl p-6 text-center shadow-sm">
+                <div className="text-3xl font-bold font-display text-accent mb-2">{stat.value}</div>
+                <div className="text-gray-700 text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-white/60 rounded-2xl p-8 backdrop-blur-sm">
+            <h3 className="font-display font-semibold text-off-white mb-6 text-center">The International Patient Funnel</h3>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-3 text-sm">
+              <div className="flex flex-col items-center">
+                <div className="bg-gradient-to-br from-pink-400 to-rose-400 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mb-2">1</div>
+                <div className="font-semibold text-off-white text-center">See us on TikTok / Instagram</div>
+                <div className="text-gray-600 text-xs text-center mt-1">Viral before/afters, patient stories</div>
+              </div>
+              <div className="flex items-center justify-center text-gray-400 hidden md:flex">→</div>
+              <div className="flex flex-col items-center">
+                <div className="bg-gradient-to-br from-blue-400 to-indigo-400 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mb-2">2</div>
+                <div className="font-semibold text-off-white text-center">Google "Dental Implants Vietnam"</div>
+                <div className="text-gray-600 text-xs text-center mt-1">Search volume: 1.2M+/year</div>
+              </div>
+              <div className="flex items-center justify-center text-gray-400 hidden md:flex">→</div>
+              <div className="flex flex-col items-center">
+                <div className="bg-gradient-to-br from-cyan-400 to-blue-400 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mb-2">3</div>
+                <div className="font-semibold text-off-white text-center">Land on our website</div>
+                <div className="text-gray-600 text-xs text-center mt-1">Evaluate pricing, credentials, AI tools</div>
+              </div>
+              <div className="flex items-center justify-center text-gray-400 hidden md:flex">→</div>
+              <div className="flex flex-col items-center">
+                <div className="bg-gradient-to-br from-green-400 to-emerald-400 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mb-2">4</div>
+                <div className="font-semibold text-off-white text-center">Chat on WhatsApp</div>
+                <div className="text-gray-600 text-xs text-center mt-1">Get instant answers, build confidence</div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-gray-700 text-sm mt-8">
+            <span className="font-semibold">This is why your website needs to speak directly to international patients.</span><br/>
+            We exist in that critical conversion moment between social discovery and WhatsApp booking.
+          </p>
         </div>
 
         {/* CTA */}

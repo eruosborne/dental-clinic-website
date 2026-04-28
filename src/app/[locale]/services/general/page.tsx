@@ -3,19 +3,19 @@ import Link from "next/link";
 import { getLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "General Dentistry in Vietnam — Fillings, Root Canals & More",
+  title: "General Dentistry — Fillings, Root Canals & More",
   description:
-    "Comprehensive general dentistry in Da Nang, Vietnam. Fillings, root canals, extractions, deep cleanings. English-speaking team. Save 60–70% vs NZ/Aus. Free consultation.",
+    "Comprehensive general dentistry. Fillings, root canals, extractions, deep cleanings. English-speaking team. Save 60–70% vs NZ/Aus. Free consultation.",
 };
 
 const procedures = [
-  { name: "Dental Check-up & Clean", desc: "Comprehensive examination, X-rays, scale & polish.", nz: "NZD 180–300", metal: "~NZD 35–60" },
-  { name: "Composite Filling (white)", desc: "Tooth-coloured resin restoration for cavities.", nz: "NZD 200–400", metal: "~NZD 40–80" },
-  { name: "Root Canal Treatment", desc: "Saves a badly infected tooth — including crown if needed.", nz: "NZD 1,200–2,500", metal: "~NZD 220–450" },
-  { name: "Simple Tooth Extraction", desc: "Removal of a straightforward tooth.", nz: "NZD 200–350", metal: "~NZD 50–90" },
-  { name: "Surgical Extraction (wisdom)", desc: "Removal of impacted or complex wisdom teeth.", nz: "NZD 400–900", metal: "~NZD 80–180" },
-  { name: "Deep Cleaning (per quadrant)", desc: "Periodontal scaling and root planing for gum disease.", nz: "NZD 350–700", metal: "~NZD 70–130" },
-  { name: "Night Guard (occlusal splint)", desc: "Custom-fitted guard to protect teeth from grinding.", nz: "NZD 600–900", metal: "~NZD 120–180" },
+  { name: "Dental Check-up & Clean", desc: "Comprehensive examination, X-rays, scale & polish.", nz: "NZD 180–300", clinic: "~NZD 35–60" },
+  { name: "Composite Filling (white)", desc: "Tooth-coloured resin restoration for cavities.", nz: "NZD 200–400", clinic: "~NZD 40–80" },
+  { name: "Root Canal Treatment", desc: "Saves a badly infected tooth — including crown if needed.", nz: "NZD 1,200–2,500", clinic: "~NZD 220–450" },
+  { name: "Simple Tooth Extraction", desc: "Removal of a straightforward tooth.", nz: "NZD 200–350", clinic: "~NZD 50–90" },
+  { name: "Surgical Extraction (wisdom)", desc: "Removal of impacted or complex wisdom teeth.", nz: "NZD 400–900", clinic: "~NZD 80–180" },
+  { name: "Deep Cleaning (per quadrant)", desc: "Periodontal scaling and root planing for gum disease.", nz: "NZD 350–700", clinic: "~NZD 70–130" },
+  { name: "Night Guard (occlusal splint)", desc: "Custom-fitted guard to protect teeth from grinding.", nz: "NZD 600–900", clinic: "~NZD 120–180" },
 ];
 
 const faqs = [
@@ -38,7 +38,7 @@ export default async function GeneralPage() {
             <div>
               <p className="text-accent text-sm font-medium mb-1">Save up to 70% vs NZ</p>
               <h1 className="text-4xl md:text-6xl font-bold font-display text-off-white leading-tight">
-                General Dentistry<br />in Da Nang
+                General Dentistry<br />Made Affordable
               </h1>
             </div>
           </div>
@@ -67,8 +67,8 @@ export default async function GeneralPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex-1">
-                    <div className="text-xs text-gray-600">Metal Dental</div>
-                    <div className="text-accent font-bold font-display">{p.metal}</div>
+                    <div className="text-xs text-gray-600">Our Clinic</div>
+                    <div className="text-accent font-bold font-display">{p.clinic}</div>
                   </div>
                   <Link href={locale === "vi" ? "/vi/book" : "/book"} className="shrink-0 bg-accent/10 border border-accent/30 text-accent text-xs px-3 py-1.5 rounded-lg hover:bg-accent/20 transition-colors">Get Quote</Link>
                 </div>

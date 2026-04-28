@@ -19,7 +19,7 @@ const variantClasses: Record<Variant, string> = {
   ghost:
     "border border-white/15 text-black hover:border-white/30 hover:bg-gray-100 transition-all duration-300",
   gold:
-    "bg-gold text-primary font-semibold hover:brightness-110 shadow-[0_0_20px_rgba(10,22,40,0.3)] transition-all duration-300",
+    "bg-gold text-white font-semibold hover:bg-gold-hover shadow-[0_0_20px_rgba(200,151,62,0.3)] hover:shadow-[0_0_30px_rgba(200,151,62,0.45)] transition-all duration-300",
 };
 
 const sizeClasses: Record<Size, string> = {

@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import { BookingForm } from "./BookingForm";
 
 export const metadata: Metadata = {
-  title: "Book Free Dental Consultation — Metal Dental Da Nang",
+  title: "Book Free Dental Consultation — Smile Dental Clinic",
   description:
-    "Book your free dental consultation at Metal Dental Da Nang. No commitment, no flights booked. Our English-speaking coordinator will be in touch within 24 hours.",
+    "Book your free dental consultation at Smile Dental Clinic. No commitment, no flights booked. Our English-speaking coordinator will be in touch within 24 hours.",
 };
 
 const steps = [
   { num: "1", title: "We review your request", desc: "Our coordinator reviews your goals and prepares a personalised treatment plan with accurate pricing." },
   { num: "2", title: "You receive a detailed email", desc: "Full treatment plan, costs, timeline, and answers to your questions — within 24 hours." },
   { num: "3", title: "Optional video consultation", desc: "A free 20-minute video call with your specialist before you book any flights." },
-  { num: "4", title: "Arrive in Da Nang", desc: "We take care of everything from airport pickup arrangements to aftercare instructions." },
+  { num: "4", title: "Arrive at our clinic", desc: "We take care of everything from pickup arrangements to aftercare instructions." },
 ];
 
 export default function BookPage() {
@@ -63,8 +63,8 @@ export default function BookPage() {
                 <h3 className="font-display font-semibold text-off-white mb-3 text-sm">Prefer to talk first?</h3>
                 <div className="space-y-2.5 text-sm text-gray-700">
                   <p>💬 <button onClick={() => document.getElementById("chat-widget-trigger")?.click()} className="text-accent hover:text-accent-hover transition-colors">Chat with our AI</button> — instant answers, any timezone</p>
-                  <p>📞 Call us: <a href="tel:+84911555858" className="text-accent hover:text-accent-hover transition-colors">+84 911 555 858</a></p>
-                  <p>✉️ Email: <a href="mailto:nhakhoametal@gmail.com" className="text-accent hover:text-accent-hover transition-colors">nhakhoametal@gmail.com</a></p>
+                  <p>📞 Call us: <a href="tel:+62800000000" className="text-accent hover:text-accent-hover transition-colors">+62 800 000 0000</a></p>
+                  <p>✉️ Email: <a href="mailto:hello@smiledental.clinic" className="text-accent hover:text-accent-hover transition-colors">hello@smiledental.clinic</a></p>
                 </div>
               </div>
 

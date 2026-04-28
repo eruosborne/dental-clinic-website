@@ -29,7 +29,9 @@ export function BookingForm() {
   if (sent) {
     return (
       <div className="glass rounded-2xl p-10 text-center">
-        <div className="text-5xl mb-4">🎉</div>
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-success/15 flex items-center justify-center">
+          <svg className="w-8 h-8 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
         <h3 className="font-display font-bold text-2xl text-off-white mb-3">
           Consultation request received!
         </h3>
@@ -54,18 +56,18 @@ export function BookingForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs text-gray-600 mb-1.5 font-medium">Full Name *</label>
-          <input required type="text" placeholder="Jane Smith" className={inputClass} />
+          <input required type="text" placeholder="Jane Smith" autoComplete="name" className={inputClass} />
         </div>
         <div>
           <label className="block text-xs text-gray-600 mb-1.5 font-medium">Email Address *</label>
-          <input required type="email" placeholder="jane@example.com" className={inputClass} />
+          <input required type="email" placeholder="jane@example.com" autoComplete="email" className={inputClass} />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs text-gray-600 mb-1.5 font-medium">Phone Number *</label>
-          <input required type="tel" placeholder="+64 21 xxx xxxx" className={inputClass} />
+          <input required type="tel" placeholder="+64 21 xxx xxxx" autoComplete="tel" className={inputClass} />
         </div>
         <div>
           <label className="block text-xs text-gray-600 mb-1.5 font-medium">Country</label>
@@ -108,7 +110,7 @@ export function BookingForm() {
         <label className="flex items-start gap-3 cursor-pointer">
           <input type="checkbox" className="mt-0.5 accent-[#0A1628] w-4 h-4" defaultChecked />
           <span className="text-xs text-gray-600 leading-relaxed">
-            I agree to receive a follow-up email from Metal Dental's international patient team regarding my enquiry. No spam, no pressure — just helpful information.
+            I agree to receive a follow-up email from Smile Dental Clinic's international patient team regarding my enquiry. No spam, no pressure — just helpful information.
           </span>
         </label>
       </div>
@@ -118,7 +120,12 @@ export function BookingForm() {
         disabled={sending}
         className="w-full bg-accent text-primary font-semibold py-4 rounded-xl hover:bg-accent-hover disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(10,22,40,0.25)] hover:shadow-[0_0_40px_rgba(10,22,40,0.4)] transition-all duration-300 text-base"
       >
-        {sending ? "Sending your request..." : "Send My Consultation Request →"}
+        {sending ? (
+          <span className="inline-flex items-center gap-2">
+            <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>
+            Sending your request...
+          </span>
+        ) : "Send My Consultation Request \u2192"}
       </button>
 
       <p className="text-center text-xs text-gray-600">

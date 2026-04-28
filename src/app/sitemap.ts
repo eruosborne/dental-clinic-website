@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://nhakhoametal.com";
+const BASE_URL = "https://smiledental.clinic";
 
 const pages = [
   { path: "", priority: 1.0, changeFreq: "weekly" },

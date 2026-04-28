@@ -24,7 +24,7 @@ const CheckIcon = () => (
 function ChatPreview() {
   const messages = [
     { from: "user", text: "How much do dental implants cost?" },
-    { from: "bot", text: "At Metal Dental, a single implant (including crown) is typically USD 900–1,200 — that's around NZD 1,500–2,000 vs NZD 5,000–8,000 in Auckland. Want a detailed breakdown?" },
+    { from: "bot", text: "At Smile Dental Clinic, a single implant (including crown) is typically USD 900–1,200 — that's around NZD 1,500–2,000 vs NZD 5,000–8,000 in Auckland. Want a detailed breakdown?" },
     { from: "user", text: "Yes please! And can I do it in one week?" },
     { from: "bot", text: "Absolutely. Most single implant cases can be completed in 5–7 days. I can check Dr. Nguyen's availability for you — what dates work?" },
   ];
@@ -173,7 +173,7 @@ export default function AIShowcase() {
                     k === "chat"
                       ? "bg-accent text-primary hover:bg-accent-hover"
                       : k === "preview"
-                      ? "bg-gold/80 text-primary hover:brightness-110"
+                      ? "bg-gold text-white hover:bg-gold-hover"
                       : "border border-gray-300 text-black hover:border-white/40 hover:bg-gray-100"
                   }`}
                 >
